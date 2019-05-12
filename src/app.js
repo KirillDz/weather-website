@@ -4,6 +4,8 @@ const hbs = require('hbs');
 const geocode = require('./utils/geocode');
 const forecast = require('./utils/forecast');
 const app = express();
+const port = process.env.PORT || 3333; // here we define veriable where we will be handle port from herocu and if it wont be able we go to port 3333
+
 
 //define paths for express config
 const publicDirectoryPath = path.join(__dirname, '../public'); // this is directory with frontend files
@@ -96,6 +98,6 @@ app.get('*', (req, res) => { // '*' - this is all routes exept
   });
 });
 
-app.listen(3333, () => {
-  console.log('Server is up on port 3333. You fukingmatherfucker!!');
+app.listen(port, () => {
+  console.log(`Server is up on port ${port}. You fukingmatherfucker!!`);
 });
