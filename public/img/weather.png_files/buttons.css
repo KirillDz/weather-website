@@ -1,0 +1,34 @@
+a.slack-button {
+  margin-top: 7px;
+  margin-left: 40px;
+}
+
+.slack-button {
+  width: auto;
+  padding-left: 55px;
+  margin-left: 0;
+  margin: 0 5px 3px 0;
+  background-color: #fff;
+  border: none;
+  font-weight: 600;
+  color: #43464a;
+  position: relative;
+  font-size: 12px;
+  height: 40px;
+  line-height: 22px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.slack-button::after {
+  content: "";
+  background-image: url(https://d2zr3z7ie3bigu.cloudfront.net/assets/slack@2x-dd90acdb0f4864b44bb00f53d57a6173.png);
+  background-repeat: no-repeat;
+  background-size: 20px auto;
+  background-position: center;
+  border-right: 1px solid #dcdfe2;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
